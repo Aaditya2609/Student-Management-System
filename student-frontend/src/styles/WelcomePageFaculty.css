@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* @keyframes header {
+    0%   { color: rgba(221, 86, 199);}
+    50%  { color: rgba(230, 221, 101);}
+    100% { color: rgb(101, 230, 219);}
+} */
+.header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: x-large;
+    width: 80vw;
+    height: 7vh;
+    font-weight: 600;
+    background-color: red;
+    color: yellow;
+    /* animation-name: header;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;  */
+}
+
+
+.announcement{
+    font-size: x-large;
+    font-weight: 700;
+}

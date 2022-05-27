@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  background-color: rgb(24, 18, 71);
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/blurbg1.jpg");
+  background-size: cover;
+  align-items: center;
+}
+
+.loader,
+.notValidUser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  left: 39vw;
+  top: 33vh;
+  left: auto;
+  top: auto;
+}
+
+.form-container {
+  margin-left: 5%;
+  height: 55%;
+  width: 45%;
+  box-shadow: -5px -5px 10px ghostwhite;
+  flex-direction: column;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lbl{
+  color: white;
+  font-size: xx-large;
+  margin-right: 15px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.inpt{
+  display: inline-block;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 6px 0px 6px 10px;
+  width: 55%;
+  background-color: transparent;
+  /* agar screen choti ho to height 8vh */
+}
+.login-btn {
+  background-color: rgb(51, 51, 153);
+  font-size: larger;
+  margin: auto auto;
+  width: 94%;
+  height: 7vh;
+  cursor: pointer;
+  color: white;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+.login-btn:hover {
+  background-color: rgb(51, 51, 153, 0.8);
+  border-color: white;
+  color: white;
+}
+
+.error {
+  color: rgb(24, 23, 23);
+  font-weight: 600;
+  font-size: large;
+  align-self: flex-end;
+}
+
+.exceedText {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#notValidInfo {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .form-container {
+    width: 55%;
+    height: 65%;
+    text-align: center;
+  }
+  .error {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-container {
+    width: 75%;
+    height: 65%;
+    text-align: center;
+  }
+  .lbl {
+    color: black;
+  }
+
+  .loadingInfo {
+    font-size: x-large;
+  }
+  #notValidInfo {
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .exceedText {
+    font-size: large;
+  }
+
+  .loader {
+    text-align: center;
+  }
+  .error {
+    font-size: x-small;
+  }
+}
+
+

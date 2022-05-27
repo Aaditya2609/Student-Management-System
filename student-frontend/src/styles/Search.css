@@ -1,0 +1,284 @@
+.searchContainer {
+  background-color: rgb(0, 0, 0, 0.2);
+  width: 40vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.label {
+  color: black;
+}
+
+.searchForm {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  margin: 5px auto;
+  /* color: rgb(51, 187, 255); */
+  color: black;
+}
+
+#studentId {
+  width: 80%;
+  /* border: 2px solid; */
+  display: inline-block;
+  margin: 10px 0px 6px 10px;
+  background-color: rgb(256, 256, 256, 0.6);
+  height: 6vh;
+}
+
+.searchButton {
+  margin: 15px 0 20px 9px;
+  margin-left: 9px;
+  width: 80%;
+  height: 6vh;
+  /* background-color: rgb(51, 187, 255); */
+  background-color: rgb(41, 61, 61);
+  color: white;
+  cursor: pointer;
+  font-size: larger;
+}
+.searchButton:hover {
+  border: 2px solid white;
+}
+
+#notFound {
+  display: flex;
+  justify-content: center;
+}
+
+.notFoundText {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.foundContainer {
+  width: 85vw;
+  margin: 6% 0 0 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.result {
+  width: 85vw;
+}
+
+.SearchHead {
+  border: 2px dashed black;
+  font-size: larger;
+  text-align: center;
+}
+
+.Id {
+  width: 5vw;
+}
+
+.Name {
+  width: 25vw;
+}
+
+.Branch {
+  width: 15vw;
+}
+.DOB {
+  width: 15vw;
+}
+
+.Link {
+  width: 25vw;
+}
+
+.SearchData {
+  border: 2px dashed black;
+  width: 15vw;
+  font-size: larger;
+  text-align: center;
+}
+
+.IdData {
+  width: 5vw;
+}
+
+.NameData {
+  width: 25vw;
+}
+
+.BranchData {
+  width: 15vw;
+}
+.DOBData {
+  width: 15vw;
+}
+
+.LinkData {
+  width: 25vw;
+}
+
+.dataLink {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#fullDetails {
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  width: 55vw;
+  height: 75vh;
+  height: fit-content;
+  padding: 5% 0 2% 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+  font-size: larger;
+  width: 17vw;
+}
+
+.data {
+  color: white;
+  font-size: large;
+  border: 1px solid black;
+  text-align: center;
+  width: 21vw;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 35vw;
+}
+.BTN {
+  padding: 10px;
+  width: 25%;
+  cursor: pointer;
+  color: white;
+  font-size: large;
+  box-shadow: 3px 3px 5px black;
+  background-color: black;
+}
+.BTN:hover {
+  border: 1px solid white;
+  text-decoration: underline;
+  /* opacity: 0.8; */
+}
+
+.ok:hover {
+  background-color: limegreen;
+}
+
+.update:hover {
+  background-color: orange;
+}
+
+.delete:hover {
+  background-color: red;
+}
+
+.prompt {
+  content: "";
+  font-size: large;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 30%;
+  /* margin: 5px 0 0 15%; */
+  color: white;
+  text-align: center;
+}
+
+.sure-btn,
+.cancel-btn {
+  margin: 15px;
+  width: 30%;
+  font-size: small;
+  background-color: grey;
+  padding: 5px 10px;
+  font-weight: 600;
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+.sure-btn:hover {
+  background-color: red;
+}
+
+.cancel-btn:hover {
+  background-color: limegreen;
+}
+.resultCol {
+  width: 17vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-weight: 700;
+}
+
+.fullDetailFormText {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+  .searchButton {
+    font-size: small;
+  }
+  /* .notFoundText {
+    font-size: large;
+  } */
+  /* .head {
+    font-size: small;
+  }
+  .data {
+    font-size: small;
+  }
+  .notFoundText {
+    font-size: small;
+  }
+  .BTN{
+    font-size: small;
+  } */
+  .SearchData, .SearchHead, .head, .data, .notFoundText, .BTN, .prompt{
+    font-size: small;
+  }
+  .BTN{
+    width: fit-content;
+  }
+  .NameData, .Name, .LinkData, .Link{
+    width: 20vw;
+  }
+
+  .result{
+    padding: 10px;
+  }
+  .sure-btn, .cancel-btn{
+    width: 50%;
+    font-size: x-small;
+  }
+}
+
+

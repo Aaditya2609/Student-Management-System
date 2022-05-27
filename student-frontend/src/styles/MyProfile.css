@@ -1,0 +1,29 @@
+.myheading {
+    padding: 10px;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+    font-size: larger;
+    width: 17vw;
+  }
+  
+  .mydating {
+      padding: 10px;
+    color: white;
+    font-size: large;
+    border: 1px solid black;
+    text-align: center;
+    width: 21vw;
+  }
+
+  @media screen and (max-width:500px){
+      .mydating{
+          padding: 0px;
+          font-size: small;
+      }
+      .myheading{
+          padding: 0px;
+          font-size: small;
+      }
+
+  }

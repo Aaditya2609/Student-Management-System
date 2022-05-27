@@ -1,0 +1,68 @@
+.UpdateContainer{
+    /* height: 50vh; */
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.label{
+    color: black;
+}
+
+.UpdateForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    background-color: white;
+}
+.foundContainerUpdate{
+    display: none;
+    width: 50vw;
+    background-color: white;
+    padding-left: 20%;
+    height: 25%;
+}
+.UpdateRow{
+    margin: 10px auto;
+}
+.UpdateHead{
+    border: 2px dashed green;
+    width: 15vw;
+    font-size: x-large;
+    text-align: center;
+}
+
+.UpdateData{
+    border: 2px dashed green;
+    width: 15vw;
+    font-size: x-large;
+    text-align: center;
+}
+
+.UpdateButton
+{
+    border: 2px solid rgb(181, 189, 181);
+    border-radius: 10px;
+    font-size: x-large;
+    margin: auto auto;
+    width: 9vw;
+    cursor: pointer;
+}
+.UpdateButton:hover{
+    background-color: green;
+    border-color: white;
+    color:white;
+}
+
+.fullDetailFormText{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+    .UpdateButton{
+        font-size: small;
+    }
+}

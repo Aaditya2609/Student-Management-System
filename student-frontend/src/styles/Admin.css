@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: rgb(24, 18, 71);
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 15%;
+  background-color: black;
+  height: 100vh;
+  box-shadow: 0 4px 10px white;
+}
+
+.leftitem,
+.rightitem {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  width: 15vw;
+  text-align: left;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: larger;
+  font-family: cursive;
+}
+
+.leftitem:hover {
+  background-color: rgb(51, 51, 51);
+  /* background-color: rgb(71, 71, 71); */
+}
+
+#user {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.adminImage {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.adminName {
+  color: white;
+  margin: auto;
+}
+
+.openWindow {
+  width: 85%;
+  display: flex;
+  background-image: url("../images/mainpagebg3.jpg");
+  background-size: cover;
+}
+.main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftitem-dropdown {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  width: 15vw;
+  text-align: left;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: larger;
+  font-family: cursive;
+}
+
+.dropdown {
+  margin-left: 3px;
+  background-color: black;
+  color: white;
+  font-family: cursive;
+  font-size: 17px;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+}
+.icon {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 1068px) {
+  .dropdown {
+    margin-left: -6px;
+    width: 2vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .adminName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+  }
+  .navbar {
+    width: 30%;
+    padding-top: 20px;
+  }
+  .leftitem,
+  .leftitem-dropdown {
+    width: 20vw;
+    padding: 10px 1px;
+    font-size: smaller;
+  }
+  .dropdown {
+    width: 12vw;
+    font-size: smaller;
+  }
+  .icon {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .heading {
+    font-size: large;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .adminName {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .adminName {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .adminName {
+    font-size: x-small;
+  }
+}

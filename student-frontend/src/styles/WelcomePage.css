@@ -1,0 +1,100 @@
+.welcomeContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: fit-content;
+}
+
+.problemContainer{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40vh;
+}
+
+.problem1, .problem2, .problem3{
+    font-family: cursive;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    width: 0;
+    overflow: hidden;
+    transition: width 2s;
+    height: 5vh;
+    box-sizing:content-box;
+    border-radius: 20px;
+}
+
+.problem1{
+    align-self: flex-start;
+}
+
+.problem2{
+    align-self: flex-end;
+}
+
+.problem3{
+    align-self: flex-start;
+}
+
+.solutionButton{
+    display: none;
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: large;
+    background-color: gray;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px white;
+    align-self: center;
+}
+.solutionContainer{
+    display: none;
+    height: 60vh;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.solution{
+    font-family: cursive;
+    background-color: black;
+    color: transparent;
+}
+
+.sol1{
+    transition: height 2s;
+    height: 0;
+    box-sizing: content-box;
+    font-size: xx-large;
+    border-radius: 10vw;
+}
+
+.sol2{
+    transition: height 2s;
+    height: 0;
+    box-sizing: content-box;
+    font-size: x-large;
+    border-radius: 10vw;
+}
+
+.sol3{
+    transition: height 2s;
+    height: 0;
+    box-sizing: content-box;
+    font-size: larger;
+    border-radius: 10vw;
+}
+
+@media screen and (max-width: 800px) {
+    .problem1, .problem2, .problem3{
+        height: fit-content;
+        font-size: large;
+    }
+
+    .solution{
+        font-size: x-large;
+    }
+}
